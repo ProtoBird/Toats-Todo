@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Parse/Parse.h"
+#import <ParseUI/ParseUI.h>
 
 @interface ViewController ()
 
@@ -23,5 +25,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 @end
