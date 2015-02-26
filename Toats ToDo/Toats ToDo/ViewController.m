@@ -7,10 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "Parse/Parse.h"
+#import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
 
+
+
 @interface ViewController ()
+
 
 @end
 
@@ -18,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,6 +29,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    PFLogInViewController *login = [[PFLogInViewController alloc] init];
+    [self presentModalViewController:login animated:YES];
+}
 
 
 
