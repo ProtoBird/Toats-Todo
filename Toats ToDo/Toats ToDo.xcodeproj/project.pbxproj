@@ -32,6 +32,8 @@
 		5F41CF4F1ABB12BF00205ECB /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F41CF4A1ABB12BF00205ECB /* ParseCrashReporting.framework */; };
 		5F41CF501ABB12BF00205ECB /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F41CF4B1ABB12BF00205ECB /* ParseFacebookUtils.framework */; };
 		5F41CF511ABB12BF00205ECB /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F41CF4C1ABB12BF00205ECB /* ParseUI.framework */; };
+		5F41CF561ABB171400205ECB /* toDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CF551ABB171400205ECB /* toDoItem.m */; };
+		5F41CF591ABB23EE00205ECB /* ToDoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CF581ABB23EE00205ECB /* ToDoTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,10 @@
 		5F41CF4A1ABB12BF00205ECB /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		5F41CF4B1ABB12BF00205ECB /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		5F41CF4C1ABB12BF00205ECB /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		5F41CF541ABB171400205ECB /* toDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toDoItem.h; sourceTree = "<group>"; };
+		5F41CF551ABB171400205ECB /* toDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = toDoItem.m; sourceTree = "<group>"; };
+		5F41CF571ABB23EE00205ECB /* ToDoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewController.h; sourceTree = "<group>"; };
+		5F41CF581ABB23EE00205ECB /* ToDoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,10 @@
 				5F41CEEC1A8D041400205ECB /* Images.xcassets */,
 				5F41CEEE1A8D041400205ECB /* LaunchScreen.xib */,
 				5F41CEDF1A8D041400205ECB /* Supporting Files */,
+				5F41CF541ABB171400205ECB /* toDoItem.h */,
+				5F41CF551ABB171400205ECB /* toDoItem.m */,
+				5F41CF571ABB23EE00205ECB /* ToDoTableViewController.h */,
+				5F41CF581ABB23EE00205ECB /* ToDoTableViewController.m */,
 			);
 			path = "Toats ToDo";
 			sourceTree = "<group>";
@@ -299,8 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F41CF591ABB23EE00205ECB /* ToDoTableViewController.m in Sources */,
 				5F41CEE81A8D041400205ECB /* ViewController.m in Sources */,
 				5F41CEE51A8D041400205ECB /* AppDelegate.m in Sources */,
+				5F41CF561ABB171400205ECB /* toDoItem.m in Sources */,
 				5F41CEE21A8D041400205ECB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

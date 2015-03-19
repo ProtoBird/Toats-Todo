@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
+#import "toDoItem.h"
 
 
 
@@ -22,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,8 +34,20 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    PFLogInViewController *login = [[PFLogInViewController alloc] init];
-    [self presentModalViewController:login animated:YES];
+    //PFLogInViewController *login = [[PFLogInViewController alloc] init];
+    //[self presentModalViewController:login animated:YES];
+    
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        // do stuff with the user
+    } else {
+        PFLogInViewController *login = [[PFLogInViewController alloc] init];
+        [self presentViewController:login
+                           animated:YES
+                         completion:nil];
+    }
+     
+   
 }
 
 
