@@ -10,7 +10,6 @@
 		5F41CEE21A8D041400205ECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CEE11A8D041400205ECB /* main.m */; };
 		5F41CEE51A8D041400205ECB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CEE41A8D041400205ECB /* AppDelegate.m */; };
 		5F41CEE81A8D041400205ECB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CEE71A8D041400205ECB /* ViewController.m */; };
-		5F41CEEB1A8D041400205ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F41CEE91A8D041400205ECB /* Main.storyboard */; };
 		5F41CEED1A8D041400205ECB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F41CEEC1A8D041400205ECB /* Images.xcassets */; };
 		5F41CEF01A8D041400205ECB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F41CEEE1A8D041400205ECB /* LaunchScreen.xib */; };
 		5F41CEFC1A8D041400205ECB /* Toats_ToDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CEFB1A8D041400205ECB /* Toats_ToDoTests.m */; };
@@ -33,7 +32,9 @@
 		5F41CF501ABB12BF00205ECB /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F41CF4B1ABB12BF00205ECB /* ParseFacebookUtils.framework */; };
 		5F41CF511ABB12BF00205ECB /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F41CF4C1ABB12BF00205ECB /* ParseUI.framework */; };
 		5F41CF561ABB171400205ECB /* toDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CF551ABB171400205ECB /* toDoItem.m */; };
-		5F41CF591ABB23EE00205ECB /* ToDoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CF581ABB23EE00205ECB /* ToDoTableViewController.m */; };
+		5FDB79D91AC44C2800D2100E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB79D51AC44C2800D2100E /* MasterViewController.m */; };
+		5FDB79DA1AC44C2800D2100E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB79D71AC44C2800D2100E /* DetailViewController.m */; };
+		5FDB79DB1AC44C2800D2100E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDB79D81AC44C2800D2100E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,6 @@
 		5F41CEE41A8D041400205ECB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5F41CEE61A8D041400205ECB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5F41CEE71A8D041400205ECB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5F41CEEA1A8D041400205ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F41CEEC1A8D041400205ECB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F41CEEF1A8D041400205ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5F41CEF51A8D041400205ECB /* Toats ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toats ToDoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,15 +73,18 @@
 		5F41CF1B1A8D050600205ECB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		5F41CF361A9F7AE500205ECB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		5F41CF381A9F7AED00205ECB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		5F41CF481ABB12BF00205ECB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		5F41CF491ABB12BF00205ECB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		5F41CF4A1ABB12BF00205ECB /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
-		5F41CF4B1ABB12BF00205ECB /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		5F41CF4C1ABB12BF00205ECB /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		5F41CF481ABB12BF00205ECB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		5F41CF491ABB12BF00205ECB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
+		5F41CF4A1ABB12BF00205ECB /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = Frameworks/ParseCrashReporting.framework; sourceTree = "<group>"; };
+		5F41CF4B1ABB12BF00205ECB /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = Frameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		5F41CF4C1ABB12BF00205ECB /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = Frameworks/ParseUI.framework; sourceTree = "<group>"; };
 		5F41CF541ABB171400205ECB /* toDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toDoItem.h; sourceTree = "<group>"; };
 		5F41CF551ABB171400205ECB /* toDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = toDoItem.m; sourceTree = "<group>"; };
-		5F41CF571ABB23EE00205ECB /* ToDoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewController.h; sourceTree = "<group>"; };
-		5F41CF581ABB23EE00205ECB /* ToDoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewController.m; sourceTree = "<group>"; };
+		5FDB79D41AC44C2800D2100E /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		5FDB79D51AC44C2800D2100E /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		5FDB79D61AC44C2800D2100E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5FDB79D71AC44C2800D2100E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5FDB79D81AC44C2800D2100E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,20 +126,7 @@
 		5F41CED31A8D041400205ECB = {
 			isa = PBXGroup;
 			children = (
-				5F41CF471ABB12BF00205ECB /* Frameworks */,
-				5F41CF381A9F7AED00205ECB /* Social.framework */,
-				5F41CF361A9F7AE500205ECB /* Accounts.framework */,
-				5F41CF1B1A8D050600205ECB /* libsqlite3.dylib */,
-				5F41CF191A8D04FD00205ECB /* libz.dylib */,
-				5F41CF171A8D04F500205ECB /* SystemConfiguration.framework */,
-				5F41CF151A8D04E800205ECB /* StoreKit.framework */,
-				5F41CF131A8D04E000205ECB /* Security.framework */,
-				5F41CF111A8D04D100205ECB /* QuartzCore.framework */,
-				5F41CF0F1A8D04C900205ECB /* MobileCoreServices.framework */,
-				5F41CF0B1A8D04B900205ECB /* CoreGraphics.framework */,
-				5F41CF0C1A8D04B900205ECB /* CoreLocation.framework */,
-				5F41CF071A8D048800205ECB /* AudioToolbox.framework */,
-				5F41CF081A8D048800205ECB /* CFNetwork.framework */,
+				5FDB79DC1AC44DCB00D2100E /* Frameworks */,
 				5F41CEDE1A8D041400205ECB /* Toats ToDo */,
 				5F41CEF81A8D041400205ECB /* Toats ToDoTests */,
 				5F41CEDD1A8D041400205ECB /* Products */,
@@ -159,14 +149,16 @@
 				5F41CEE41A8D041400205ECB /* AppDelegate.m */,
 				5F41CEE61A8D041400205ECB /* ViewController.h */,
 				5F41CEE71A8D041400205ECB /* ViewController.m */,
-				5F41CEE91A8D041400205ECB /* Main.storyboard */,
+				5FDB79D41AC44C2800D2100E /* MasterViewController.h */,
+				5FDB79D51AC44C2800D2100E /* MasterViewController.m */,
+				5FDB79D61AC44C2800D2100E /* DetailViewController.h */,
+				5FDB79D71AC44C2800D2100E /* DetailViewController.m */,
+				5FDB79D81AC44C2800D2100E /* Main.storyboard */,
 				5F41CEEC1A8D041400205ECB /* Images.xcassets */,
 				5F41CEEE1A8D041400205ECB /* LaunchScreen.xib */,
 				5F41CEDF1A8D041400205ECB /* Supporting Files */,
 				5F41CF541ABB171400205ECB /* toDoItem.h */,
 				5F41CF551ABB171400205ECB /* toDoItem.m */,
-				5F41CF571ABB23EE00205ECB /* ToDoTableViewController.h */,
-				5F41CF581ABB23EE00205ECB /* ToDoTableViewController.m */,
 			);
 			path = "Toats ToDo";
 			sourceTree = "<group>";
@@ -197,16 +189,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5F41CF471ABB12BF00205ECB /* Frameworks */ = {
+		5FDB79DC1AC44DCB00D2100E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F41CF381A9F7AED00205ECB /* Social.framework */,
+				5F41CF361A9F7AE500205ECB /* Accounts.framework */,
+				5F41CF1B1A8D050600205ECB /* libsqlite3.dylib */,
+				5F41CF191A8D04FD00205ECB /* libz.dylib */,
 				5F41CF481ABB12BF00205ECB /* Bolts.framework */,
 				5F41CF491ABB12BF00205ECB /* Parse.framework */,
 				5F41CF4A1ABB12BF00205ECB /* ParseCrashReporting.framework */,
 				5F41CF4B1ABB12BF00205ECB /* ParseFacebookUtils.framework */,
 				5F41CF4C1ABB12BF00205ECB /* ParseUI.framework */,
+				5F41CF171A8D04F500205ECB /* SystemConfiguration.framework */,
+				5F41CF151A8D04E800205ECB /* StoreKit.framework */,
+				5F41CF131A8D04E000205ECB /* Security.framework */,
+				5F41CF111A8D04D100205ECB /* QuartzCore.framework */,
+				5F41CF0F1A8D04C900205ECB /* MobileCoreServices.framework */,
+				5F41CF0B1A8D04B900205ECB /* CoreGraphics.framework */,
+				5F41CF0C1A8D04B900205ECB /* CoreLocation.framework */,
+				5F41CF071A8D048800205ECB /* AudioToolbox.framework */,
+				5F41CF081A8D048800205ECB /* CFNetwork.framework */,
 			);
-			path = Frameworks;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F41CEEB1A8D041400205ECB /* Main.storyboard in Resources */,
 				5F41CEF01A8D041400205ECB /* LaunchScreen.xib in Resources */,
 				5F41CEED1A8D041400205ECB /* Images.xcassets in Resources */,
+				5FDB79DB1AC44C2800D2100E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,11 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F41CF591ABB23EE00205ECB /* ToDoTableViewController.m in Sources */,
 				5F41CEE81A8D041400205ECB /* ViewController.m in Sources */,
 				5F41CEE51A8D041400205ECB /* AppDelegate.m in Sources */,
+				5FDB79D91AC44C2800D2100E /* MasterViewController.m in Sources */,
 				5F41CF561ABB171400205ECB /* toDoItem.m in Sources */,
 				5F41CEE21A8D041400205ECB /* main.m in Sources */,
+				5FDB79DA1AC44C2800D2100E /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,14 +342,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5F41CEE91A8D041400205ECB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F41CEEA1A8D041400205ECB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5F41CEEE1A8D041400205ECB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
