@@ -39,20 +39,35 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    //PFLogInViewController *login = [[PFLogInViewController alloc] init];
-    //[self presentModalViewController:login animated:YES];
     
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         // do stuff with the user
+        [self dismissViewControllerAnimated:YES completion:nil];
     } else {
         PFLogInViewController *login = [[PFLogInViewController alloc] init];
+        [login setDelegate:self];
         [self presentViewController:login
                            animated:YES
                          completion:nil];
+        
     }
     
+    NSLog(@"Continuing as %@",currentUser.username);
+    
+    if (currentUser) {
+        [self dismissViewControllerAnimated:YES
+                                 completion:nil];
+        NSLog(@"Login Sucsess");
+    }
 }
+
+// Sent to the delegate when a PFUser is logged in.
+- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
+    [self dismissViewControllerAnimated:YES
+                             completion:NULL];
+}
+
 
 
 - (void)insertNewObject:(id)sender {
