@@ -29,6 +29,13 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"toDoItem"];
+    
+    NSArray *itemArray = [query findObjects];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,7 +107,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
 
     NSDate *object = self.objects[indexPath.row];
     cell.textLabel.text = [object description];
